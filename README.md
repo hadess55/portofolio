@@ -2,7 +2,7 @@ How to Install :
 - Copy this repository
 - npm run install
 - npm run dev
-Enjoy 😊
+- Enjoy 😊
 
 # React + Vite
 
