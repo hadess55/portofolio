@@ -1,46 +1,16 @@
-.scroll-container {
-  display: flex;
-  justify-content: center; /* Center the logos horizontally */
-  align-items: center; /* Center logos vertically */
-  overflow: hidden; /* Hide overflow */
-  height: 150px; /* Adjust height to center vertically */
-  white-space: nowrap; /* Prevent wrapping */
-  background-color: #1a1a1a; /* Background color */
+.logo-container{
+  overflow: hidden;
+  /* display: flex; */
 }
-
-.scroll-content {
-  display: flex;
-  gap: 40px; /* Space between logos */
-  animation: scroll 30s linear infinite; /* Smooth scrolling animation */
-}
-
 .logo {
-  width: 40px; /* Adjust logo size */
-  height: auto; /* Keep the aspect ratio */
-  object-fit: contain;
-  transition: transform 0.2s;
+  animation: infinite-scroll 20s linear infinite;
+  /* flex-shrink: 0; */
 }
-
-.logo:hover {
-  transform: scale(1.1); /* Enlarge on hover */
-}
-.logo img {
-  width: 40px; /* Adjust logo size */
-  height: auto; /* Keep the aspect ratio */
-  object-fit: contain;
-  transition: transform 0.2s;
-}
-
-.logo:hover img {
-  transform: scale(1.1); /* Enlarge on hover */
-}
-
-/* Keyframes for smooth scrolling effect in the center */
-@keyframes scroll {
+@keyframes infinite-scroll {
   0% {
-    transform: translateX(100%); /* Start from outside the container */
+    transform: translateX(100%); 
   }
   100% {
-    transform: translateX(-100%); /* Scroll the content fully to the left */
+    transform: translateX(-100%); 
   }
 }
