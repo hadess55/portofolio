@@ -1,10 +1,18 @@
 .logo-container{
   overflow: hidden;
-  /* display: flex; */
+  display: flex;
+
 }
 .logo {
   animation: infinite-scroll 20s linear infinite;
-  /* flex-shrink: 0; */
+  flex-shrink: 0;
+  display: flex;
+  justify-items: center;
+
+}
+.logo img{
+  width: 50px;
+  height: auto;
 }
 @keyframes infinite-scroll {
   0% {

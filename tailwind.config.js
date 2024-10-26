@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(0)" },

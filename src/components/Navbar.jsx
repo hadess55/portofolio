@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar flex justify-between items-center px-10 py-6">
       <div className="text-3xl font-bold">Hades</div>
-      <ul className="flex space-x-8">
+      <ul className="flex space-x-8 item">
         <li>
           <a
             href="#hero"
